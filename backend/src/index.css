@@ -1,0 +1,48 @@
+.main{
+    background-image: url("{{ url_for('static', filename='/vector.svg')}}");
+    background-repeat: no-repeat;
+    background-position:center  ;
+    
+}
+.btncolor{
+    background-color: #6F757C;
+}
+#available{
+    background: #000;
+}
+
+/* audio{
+    padding: 300px;
+} */
+/* #741106 */
+/* #af0303 */
+audio::-webkit-media-controls-panel{
+    background-color: #111315;
+    border: black;
+}
+audio::-webkit-media-controls-play-button{
+    background-color: #ac1706b4;
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-current-time-display{
+    color: transparent;
+}
+audio::-webkit-media-controls-time-remaining-display{
+    color: transparent;
+}
+audio::-webkit-media-controls-timeline{
+    
+    border-radius: 40px;
+    background-color:transparent;
+}
+audio::-webkit-media-controls-volume-slider{
+    
+    background-color: gray;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+audio::-webkit-media-controls-mute-button{
+    background-color: #ac1706b4;
+    border-radius: 50%;
+}

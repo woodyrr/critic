@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{url_for('static',filename='main.js')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='dist/css/output.css')}}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
+    {% if title %}
+    <title class="text-orange-500">Critics - {{title}}</title>
+    {% else %}
+    <title>Critics</title>
+    {% endif %}
+</head>
+<body class="m-0 p-0 bg-[#111315] ">
+    {% block content%}{% endblock %}
+</body>
+</html>
